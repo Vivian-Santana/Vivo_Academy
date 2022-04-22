@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+
+</head>
+
+<body>
+    
+    <table class="menu">
+        
+        <tr style="font-size: 20px;">
+            
+            <td><a href="index.html">Home</a></td>
+            <td><a href="cadastro.html">Cadastro</a></td>
+            <td><a href="contato.html">Fale Conosco</a></td>
+        </tr>
+    </table>
+    
+    <table class="painel">
+
+        <tr>
+            
+            <td> <img src="img/cadastro.jpg" width="100%" height="100%"></td>
+            <td>
+                <form>
+                    <label> Nome: </label> <input type="text" required maxlength="30" placeholder="Digite seu nome aqui"
+                        pattern="[a-z A-Z]+$" /> <br>
+                    <label> Endereco: </label> <input type="text" required maxlength="50"
+                        placeholder="Digite end completo" /> <br>
+                    <label> Telefone: </label> <input type="text" required maxlength="30"
+                        pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" /> <br>
+                    <label> Data: </label> <input type="date" required="required" maxlength="10" name="date"
+                        pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-18" /> <br>
+                    <label> Hora: </label> <input type="time" required="required" maxlength="8" name="hour"
+                        pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" /> <br>
+                    <label> email: </label> <input type="email" required="required" class="input-text" name="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br>
+                    <input type="submit" value="Confirmar" />
+                </form>
+
+
+            </td>
+
+        </tr>
+    </table>
+    <footer> Política de Privacidade | Termos de Uso | Política de Cookies</footer>
+</body>
+
+</html>
