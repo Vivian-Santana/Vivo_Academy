@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Gama academy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
-                <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
-                <a class="nav-item nav-link" href="contato.html">Fale Conosco</a>
-            </div>
-            <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-success">Entrar</button>
-            </div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Gama academy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
+            <a class="nav-item nav-link" href="contato.html">Fale Conosco</a>
         </div>
-    </nav>
-    <!-- navbar -->
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-success">Entrar</button>
+        </div>
+    </div>
+</nav>
+<!-- navbar -->
 
-    <body>
-        <div class= "container">
-            <div class="row">
-                <div class="col-sm">
-                    <tr>
-                        <iframe  width="727" height="409" src="https://www.youtube.com/embed/G6wb5qhFcHA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </tr>
-                    <!-- tabela de cursos -->
-                    <div class="col-sm">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Cursos</th>
-                                    <th scope="col">Horários</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>HTML5</td>
-                                    <td>18:30 - 21:30</td>
-                                    <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>CSS3</td>
-                                    <td>18:30 - 21:30</td>
-                                    <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>JavaScript</td>
-                                    <td>18:30 - 21:30</td>
-                                    <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
+<body>
+    <div class="container-fluid">
+        <div class="row gx-9">
 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>    
-                </div>    <!-- tabela de cursos -->
+            <div class="col">
+                <tr>
+                    <iframe width="727" height="409" src="https://www.youtube.com/embed/G6wb5qhFcHA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </tr>
             </div>
-        </div>
-    </body>
 
-    <footer class="footer-div" >
-    
-        <div class="bg-footer">
-            <a id="" href="" target="_BLANK" class="bg" >  <i class=''>Política de Privacidade</i></a>
-            <a id="" href="" target="_BLANK" class="bg"> <i class='' ></i>Termos de Uso</a>
-            <a href="">Política de Cookies</a>
-        </div>
+            <!-- tabela de cursos -->
+            <div class="col">
 
-    </footer>
+                <table id="tabela" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">      </th>
+                            <th scope="col">Cursos</th>
+                            <th scope="col">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>HTML5</td>
+                            <td>18:30 - 21:30</td>
+                            <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>CSS3</td>
+                            <td>18:30 - 21:30</td>
+                            <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>JavaScript</td>
+                            <td>18:30 - 21:30</td>
+                            <td><button type="button" class="btn btn-outline-success">Inscreva-se</button></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+            <!-- tabela de cursos -->
+        </div>
+    </div>
+</body>
+
+<footer class="footer-div">
+
+    <div class="bg-footer">
+        <a id="" href="" target="_BLANK" class="bg"> <i class=''>Política de Privacidade</i></a>
+        <a id="" href="" target="_BLANK" class="bg"> <i class=''></i>Termos de Uso</a>
+        <a href="">Política de Cookies</a>
+    </div>
+
+</footer>
 
 </html>
